@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #333;
+  width: 100%;
+  height: 100vh;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+header {
+  position: relative;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  width: 100%;
+}
+
+header .logo {
+  color: rgb(255, 255, 0);
+  font-weight: bold;
+  font-size: 2em;
+}
+
+.skills {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 50px;
+}
+
+.skills .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.skills .container .box {
+  width: 400px;
+  height: 300px;
+  background-color: #111;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+  transition: 0.5s ease-out;
+  border-radius: 10px;
+}
+
+.skills .container .box i {
+  font-size: 4em;
+  color: #fff;
+  transition: 0.5s;
+}
+
+.skills .container .box h3 {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: rgb(255, 255, 0);
+  transition: 0.5s;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+
+.skills .container .box:hover {
+  transform: scale(1.2);
+  background-color: #e3e3e3;
+}
+
+.skills .container .box:hover i {
+  color: #111;
+}
+
+.skills .container .box:hover h3 {
+  background-color: #111;
+}
